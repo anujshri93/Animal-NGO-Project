@@ -1,40 +1,49 @@
-Hope_For_Strays_Animal_NGO_Website
-Purpose
-The project centers on an animal NGO, aiming to support animal welfare. It showcases a comprehensive skill set in both front-end and back-end development, merging technical challenges with a socially relevant cause.
+Hope for Strays (Animal NGO Webpage) - MERN stack Project
+Feel free to suggest any updates and submit a pull request
 
+Purpose
+The project is centered on an animal NGO.
+Aims to make a tangible impact on society by supporting animal welfare.
+Showcases a comprehensive skill set in both front-end and back-end development.
+Merges technical challenges with a socially relevant cause.
+Enhances both professional portfolios and societal contributions.
 Key Functionalities
-Donate Money: Users can contribute financially to support the NGO.
-Monitor Donations: Users can track how their donations are utilized.
-Volunteer Opportunities: Users can sign up to volunteer their time.
-Assistance Requests: Users can submit requests for help for animals in need.
+Empowers users to donate money.
+Allows users to monitor how their donations are utilized.
+Provides opportunities for users to volunteer their time.
+Includes an "ask for help" form for users seeking assistance.
+Ensures comprehensive support within the platform.
 Admin Interface
 Secured with JSON Web Tokens (JWT) for authentication.
-Admins can view donation and volunteer lists.
-Allows management of volunteer information, including updates and deletions.
+Grants administrators access to crucial functionalities.
+Allows checking of donation and volunteer lists.
+Enables management of volunteer information by allowing deletion and updates.
 Technology Stack
 Backend
-Express.js: Backend framework.
-MySQL: Database management system.
-JSON Web Tokens (JWT): For authentication.
-CORS: Handling cross-origin requests.
-bcrypt: For password hashing and authentication security.
-MVC Design Pattern: To structure the backend efficiently.
+Utilizes Express.js for the backend framework.
+MySQL serves as the database management system for robust data storage and retrieval.
+JSON Web Tokens (JWT) are employed for authentication to safeguard against unauthorized access.
+CORS (Cross-Origin Resource Sharing) is used for handling cross-origin requests to enable seamless communication between web resources.
+bcrypt is implemented for password hashing and authentication security to protect user credentials and sensitive information.
+Implements the Model-View-Controller (MVC) design pattern to structure the backend efficiently.
 Frontend
-React.js: Dynamic and responsive user interface.
-React Bootstrap: Stylish and responsive UI components.
-React Router Dom: Navigation between views.
-React Router Bootstrap: Integration with Bootstrap.
-Axios: Making HTTP requests.
-AG-Grid: Advanced data grid functionality.
+React.js is used to provide a dynamic and responsive user interface.
+React Bootstrap for stylish and responsive UI components.
+React Router Dom for seamless navigation between different views.
+React Router Bootstrap for integrating React Router with Bootstrap.
+Axios for making HTTP requests to interact with the backend.
+AG-Grid for advanced data grid functionality, enhancing data display and interaction.
 Impact
-The project aims to demonstrate technical proficiency while contributing to animal welfare. It empowers users to donate, volunteer, and seek assistance, creating a positive impact on animals and their care.
-
+The project aims to demonstrate technical proficiency.
+Seeks to make a meaningful contribution to animal welfare and societal well-being.
+Empowers users to donate, volunteer, and seek assistance within the platform.
+Endeavors to create a positive impact on the lives of animals and those dedicated to their care.
 Getting Started
 Update Database Configuration
-Modify MySQL settings in DbConstants.js:
+Modify the MySQL information and input your database user and password information in:
 
-javascript
-Copy code
+DbConstants.js file:
+
 export const DB_HOST = 'localhost';
 export const DB_USER = '';
 export const DB_PASS = '';
@@ -43,10 +52,8 @@ export const VOLUNTEER_TABLE = 'volunteers';
 export const DONATIONS_TABLE = 'donations';
 export const ADMIN_TABLE = 'admins';
 Database Setup
-Run the following commands to set up the database and tables:
+Create the database and tables mentioned in the constants. Use the commands below:
 
-sql
-Copy code
 CREATE DATABASE HOPEFORSTRAYS;
 USE HOPEFORSTRAYS;
 
@@ -74,28 +81,15 @@ CREATE TABLE Admins (
     Password VARCHAR(2000) NOT NULL
 );
 Backend Setup
-Open the backend directory and run:
+Open the backend in VS Code and run the following commands:
 
-bash
-Copy code
 npm install
 nodemon index.js
 Frontend Setup
-Navigate to the frontend directory and run:
+Open the frontend:
 
-bash
-Copy code
 cd Frontend
 npm install
 cd ngo/project
 npm install
 npm start
-Screenshots
-Home Page
-Volunteer Section
-Ask for Help
-Donate Section & Lookup Donations
-Admin Login & Dashboard
-Donation List & Volunteer List
-About
-This is a WPT project based on the MERN stack.
