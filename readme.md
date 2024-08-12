@@ -3,7 +3,8 @@ Feel free to suggest any updates and submit a pull request
 
 Purpose
 The project is centered on an animal NGO.
-Aims to make a tangible impact on society by supporting animal welfare.
+Aims to make a ta[Readme.md](https://github.com/user-attachments/files/16577686/Readme.md)
+ngible impact on society by supporting animal welfare.
 Showcases a comprehensive skill set in both front-end and back-end development.
 Merges technical challenges with a socially relevant cause.
 Enhances both professional portfolios and societal contributions.
