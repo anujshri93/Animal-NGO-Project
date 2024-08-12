@@ -1,0 +1,18 @@
+.admin-dashboard {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard-container {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}

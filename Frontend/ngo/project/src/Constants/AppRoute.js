@@ -1,0 +1,12 @@
+export const BASE_ROUTE = "/";
+export const ABOUT_US = "/About-Us";
+export const ASK_FOR_HELP = "/Ask-For-Help";
+export const DONATE = "/Donate";
+export const LOG_IN = "/Log-in";
+export const SIGN_UP = "/Sign-Up";
+export const ADMIN_LOGIN = "/Admin-Login";
+export const ADMIN_DASHBOARD = "/Admin-Dashboard";
+export const DONER_LIST = "/Doner-List";
+export const VOLUNTEER_LIST = "/Volunteer-List";
+export const VOLUNTEER = "/Volunteer";
+export const DONATION_STATUS = "/CheckDonationStatus";
