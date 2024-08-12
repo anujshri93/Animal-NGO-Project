@@ -1,0 +1,111 @@
+Help for strays DATABASE CREATION:
+
+-  select user(); - Shows current user
+
+-  create database hopeforstrays;
+
+______________________________________
+
+mysql> create table volunteers (
+    -> ID INT AUTO_INCREMENT PRIMARY KEY,
+    -> NAME varchar(30),
+    -> EMAIL varchar(100),
+    -> PHONE int(15),
+    -> EXP varchar(5));
+Query OK, 0 rows affected, 1 warning (0.04 sec)
+
+mysql> show tables;
++-------------------------+
+| Tables_in_hopeforstrays |
++-------------------------+
+| volunteers              |
++-------------------------+
+1 row in set (0.00 sec)
+
+mysql> desc volunteers;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| ID    | int          | NO   | PRI | NULL    | auto_increment |
+| NAME  | varchar(30)  | YES  |     | NULL    |                |
+| EMAIL | varchar(100) | YES  |     | NULL    |                |
+| PHONE | int          | YES  |     | NULL    |                |
+| EXP   | varchar(5)   | YES  |     | NULL    |                |
++-------+--------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+---------------------------------------------
+
+mysql> CREATE TABLE Donations (
+    ->     ID INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Name VARCHAR(100),
+    ->     Phone VARCHAR(15),
+    ->     Email VARCHAR(100),
+    ->     PAN VARCHAR(20),
+    ->     DonationAmount DECIMAL(10, 2)
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc Donations;
++----------------+---------------+------+-----+---------+----------------+
+| Field          | Type          | Null | Key | Default | Extra          |
++----------------+---------------+------+-----+---------+----------------+
+| ID             | int           | NO   | PRI | NULL    | auto_increment |
+| Name           | varchar(100)  | YES  |     | NULL    |                |
+| Phone          | varchar(15)   | YES  |     | NULL    |                |
+| Email          | varchar(100)  | YES  |     | NULL    |                |
+| PAN            | varchar(20)   | YES  |     | NULL    |                |
+| DonationAmount | decimal(10,2) | YES  |     | NULL    |                |
++----------------+---------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+----------------------------------------------
+
+mysql> CREATE TABLE Users (
+    ->     ID INT AUTO_INCREMENT PRIMARY KEY,
+    ->     Email VARCHAR(100) NOT NULL,
+    ->     Phone VARCHAR(15),
+    ->     Password VARCHAR(2000) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc users;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| ID       | int          | NO   | PRI | NULL    | auto_increment |
+| Email    | varchar(100) | NO   |     | NULL    |                |
+| Phone    | varchar(15)  | YES  |     | NULL    |                |
+| Password | varchar(100) | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+
+
+
+
+user data: 
+{
+    
+    "email":"virat@gmail.com",
+    "phone":"9867563423",
+    "password":"12340dkajdaaj"
+}
+
+Volunteer data: 
+
+{
+    "name":"Virat"
+    "email":"virat@gmail.com",
+    "phone":"9867563423",
+    "exp":"yes"
+}
+
+Donations data: 
+{
+    "name":"Virat"
+    "phone":"9867563423",
+    "email":"virat@gmail.com",
+     "PAN":"EGYYF67992"
+    "DonnationAmmount":4000
+}

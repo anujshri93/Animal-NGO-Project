@@ -1,0 +1,9 @@
+export const PORT = 5000;
+export const DB_HOST = 'localhost';
+export const DB_USER = 'root';
+export const DB_PASS = 'cdac';
+export const DB_NAME = 'hopeforstrays'
+export const USER_TABLE = 'Users'
+export const VOLUNTEER_TABLE = 'volunteers'
+export const DONATIONS_TABLE ='donations'
+export const ADMIN_TABLE = 'admins'
